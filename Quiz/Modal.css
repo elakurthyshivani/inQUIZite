@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#modal-outside	{
+	display:none;
+	
+	position:fixed;
+	top:0;
+	left:0;
+
+	width:100%;
+	height:100%;
+	
+	z-index:1;
+	overflow:auto;
+	
+	background-color:rgba(0, 0, 0, 0.90);
+}
+
+#modal	{
+	width:50%;
+	
+	background-color:#DD77FF;
+
+	margin:-400px auto 0;
+	padding:3%;
+	
+	position:Relative;
+	
+	transition:margin-top 0.3s ease-out;
+}
+
+#allQ	{
+	font-size:3em;
+	font-variant:small-caps;
+	border-bottom:2px solid white;
+	color:White;
+	
+	margin:0 0 2%;
+}
+
+#x	{
+	position:absolute;
+	right:0;
+	top:0;
+
+	font-size:3em;
+	background-color:white;
+	
+	cursor:pointer;
+	
+	padding:0 20px;
+	
+	transition:background-color 0.3s ease-out;
+}
+
+#x:hover	{	
+	background-color:#555;
+	color:White;
+}
+
+#qnos	{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+}
+
+.qunos	{
+	width:15%;
+	
+	padding:2%;
+	margin:1%;
+	
+	font-size:2em;
+	color:red;
+	text-align:center;
+	background-color:white;
+	
+	cursor:pointer;
+	
+	transition:0.3s ease-out;
+}
+
+.attempted	{	color:green;	}
+
+.qunos:hover	{
+	transform:scale(1.1, 1.1);
+	background-color:#555;
+	color:white;
+}

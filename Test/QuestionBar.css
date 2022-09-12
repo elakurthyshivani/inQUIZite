@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+header	{
+	width:100%;
+	
+	margin:0;
+	padding:0;
+	
+	background-color:#555;
+}
+
+header .qNo	{
+	display:table;
+	cursor:pointer;
+	
+	position:absolute;
+	
+	width:9.11%;
+	
+	float:left;
+	font-size:3em;
+	
+	background-color:#DDD;
+	border:1px solid #555;
+
+	margin:1% 0;
+	padding:0;
+	
+	transition:margin-left 0.3s, transform 0.3s ease-out;
+}
+
+header .active	{
+	cursor:pointer;
+	
+	transform:scale(1.2, 1.2);
+	
+	background-color:#888;
+	color:#FFF;
+}
+
+header .qNo span	{
+	display:table-cell;
+	
+	text-align:center;
+	vertical-align:middle;
+}

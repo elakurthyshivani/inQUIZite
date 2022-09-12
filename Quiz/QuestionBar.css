@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+header	{	
+	width:100%;
+	
+	margin:0;
+	padding:0;
+	
+	background-color:#555;
+}
+
+header .qNo	{
+	display:table;
+	cursor:pointer;
+	
+	position:absolute;
+	
+	width:9.11%;
+	overflow:hidden;
+	
+	float:left;
+	font-size:3em;
+	
+	background-color:#FFF;
+	border:1px solid #555;
+
+	margin:1% 0;
+	padding:0;
+	
+	transition:margin-left 0.3s, transform 0.3s ease-out;
+}
+
+header .qNo div	{
+	display:table-cell;
+	
+	text-align:center;
+	vertical-align:middle;
+	color:red;
+}
+
+header .qNo:hover	{
+	transform:scale(1.1, 1.1);
+	
+	background-color:#DDD;
+}
+
+header .qNo div.attempted	{	color:green;	}
+
+header .active, header .active:hover	{
+	cursor:auto;
+	
+	transform:scale(1.2, 1.2);
+	
+	background-color:#888;
+}
+
+header .active div, header .active:hover div	{
+	color:#FFF;
+}

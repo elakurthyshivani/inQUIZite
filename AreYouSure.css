@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body	{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	
+	background:#DDD url("Images/AreYouSureBG.png") no-repeat fixed center;
+	background-size:cover;
+}
+
+#info	{
+	text-align:Center;	
+	background-color:rgba(255, 255, 255, 0.80);
+	border:10px outset #EEE;
+	
+	padding:3%;
+}
+
+.msg	{
+	font-size:2em;
+}
+
+.msg:nth-of-type(2) {	color:green;	}
+.msg:nth-of-type(3)	{	color:red;	}
+
+button	{
+	display:inline-block;
+	
+	border:0;
+	background-color:aqua;
+	font-size:2.5em;
+	border:5px outset aqua;
+	border-radius:10px;
+	
+	padding:2%;
+	
+	width:30%;
+	
+	transition:0.3s ease-out;
+	
+	cursor:pointer;
+}
+
+button:hover	{
+	background-color:#00aeae;
+	border:5px outset #00aeae;
+	color:white;
+}
